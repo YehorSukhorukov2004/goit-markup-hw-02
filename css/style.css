@@ -1,22 +1,16 @@
 
 :root {
---navigation-text-color: #212121 ;
---text-color: #757575 ;
---first-color-logo: #2196F3 ;
---second-color-logo: #000000 ;
---changed-color: #2196F3 ;
---header-contact-color: #757575 ;
---big-title: #ffffff ;
---bottom-color: #2196F3 ;
---bottom-color2: #ffffff ;
---middle-title-color:#212121;
---team-title-color:#212121;
---names-color: #212121 ;
---position-text-color:#757575 ;
+--black-color: #212121 ;
+--dark-gray-color:#2F303A ;
+--black-000-color: #000000 ;
+--blue-color: #2196F3 ;
+--dark-blau:#188CE8 ;
+--gray-color: #757575 ;
+--white-color: #ffffff ;
+--team-bg-colore:#F5F4FA ;;
 --footer-address-clr: rgba(255, 255, 255, 0.6); 
---end-logo-color: #ffffff ;
 /*------------portfolio----------------*/
---portf-btm-bgr-clr:#F5F4FA ;
+--dark-white:#F5F4FA ;
 --portf-btm-txt-clr:#212121 ;
 --portf-title: #212121 ;
 --portf-text:#757575;
@@ -34,13 +28,13 @@
 
 body{
     font-family:"Roboto", sans-serif ;
-    color: #212121;
+    color: var(--black-color);
 }
 
  /*-------------------- Header-----------------*/
 
 .header {
-    color:#ffffff;
+    color:var(--white-color);
 }
 .second-logo-color {
     font-family: 'Raleway';
@@ -49,10 +43,10 @@ font-weight: 700;
 font-size: 26px;
 line-height:calc(31/26);
 letter-spacing: 0.03em;
-    color:var(--second-color-logo) ;
+    color:var(--black-000-color) ;
 }
 .logo-color {
-    color: var(--first-color-logo);
+    color: var(--blue-color);
 }
 .header-list {
 }
@@ -65,14 +59,14 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--navigation-text-color);
+color: var(--black-color);
 }
 .header-link:hover  {
- color: var(--changed-color);
+ color: var(--blue-color);
  ;
 }
 .focus-header:focus{
-    color: var(--changed-color);
+    color: var(--blue-color);
 }
 
 
@@ -85,14 +79,14 @@ color: var(--navigation-text-color);
 font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.02em;
-    color: var(--header-contact-color);
+    color: var(--gray-color);
 }
 
 .contact-clr-change:hover , .contact-clr-change:focus{
-color: var(--changed-color);
+color: var(--blue-color);
 }
 .middle-section {
-    background-color: #2F303A;
+    background-color: var(--dark-gray-color);
 }
 .middle-title {
     font-weight: 900;
@@ -101,7 +95,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-    color: var(--big-title);
+    color: var(--white-color);
 }
 
 /* .mdl-btm-chg:hover , .mdl-btm-chg:focus{ 
@@ -112,8 +106,8 @@ text-transform: uppercase;
     font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-background-color: var(--bottom-color);
-color: var(--bottom-color2);
+background-color: var(--blue-color);
+color: var(--white-color);
 display: flex;
 align-items: center;
 text-align: center;
@@ -122,12 +116,12 @@ letter-spacing: 0.06em;
 }
 
 .btm-settings:hover , .btm-settings:focus{
-    background-color: #188CE8;
+    background-color: var(--dark-blau);
     cursor: pointer;
 
 }
 .middle-advant {
-    background-color:#F5F5F5;
+   
 }
 .middle-list {
 }
@@ -139,17 +133,17 @@ font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--middle-title-color);
+color: var(--black-color);
 }
 .middle-text {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: var(--text-color);
+color: var(--gray-color);
 }
 .function {
-    background-color: #F5F5F5;
+    
 }
 .function-title {
 font-weight: 700;
@@ -164,10 +158,10 @@ letter-spacing: 0.03em;
 }
 
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--team-bg-colore);
 }
 .team-title {
-color: var(--team-title-color);
+color: var(--black-color);
 font-weight: 700;
 font-size: 36px;
 line-height: calc(42/36);
@@ -177,10 +171,10 @@ letter-spacing: 0.03em;
 .team-list {
 }
 .team-item {
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 .team-name {
-color: var(--names-color);
+color: var(--black-color);
 font-weight: 500;
 font-size: 16px;
 line-height: calc(19/16);
@@ -188,7 +182,7 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 .team-text {
-color: var(--position-text-color);
+color: var(--gray-color);
 font-weight: 400;
 font-size: 16px;
 line-height: calc(19/16);
@@ -197,11 +191,11 @@ letter-spacing: 0.03em;
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--dark-gray-color);
     
 }
 .footer-logo {
-color: var(--first-color-logo);
+color: var(--white-color);
 font-weight: 700;
 font-size: 26px;
 line-height: calc(31/26);
@@ -212,7 +206,7 @@ font-style: normal;
 
 }
 .end-logo-color {
-    color: var(--end-logo-color);
+    color: var(--blue-color);
 }
 .footer-address {
 }
@@ -223,7 +217,7 @@ font-style: normal;
 
 }
 .footer-link {
- color:  rgba(255, 255, 255, 0.6);;
+ color: var(--footer-address-clr);
  font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -232,20 +226,21 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 }
 .footer-addr-clr{
-    color:#ffffff ;
+    color:var(--white-color) ;
 }
 
 
 /* -----------portfolio-------------*/
 
 .portf-body{
+    background-color: ;
     font-family:"Roboto", sans-serif ;
-    color: #212121;
+    color: var(--black-color);
 
 }
 
 .prtf-header{
-    background-color: #ffffff;
+    background-color: var(--white-color);
      }
     .visually-hidden {
         position: absolute;
@@ -261,13 +256,13 @@ letter-spacing: 0.03em;
     } 
 
 .filter{
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
 .portfolio-btm{
     font-family:inherit;
-    background-color: var(--portf-btm-bgr-clr);
-  color: var(--portf-btm-txt-clr);
+    background-color: var(--dark-white);
+  color: var(--black-color);
   border: 0px;
   font-weight: 500;
 font-size: 16px;
@@ -279,13 +274,13 @@ cursor: pointer;
 }
 
 .btm-hover:hover {
-    background-color: var(--portf-btm-bg-effct);
-    color:var(--portf-btm-tx-effct);
+    background-color: var(--blue-color);
+    color:var(--white-color);
  }
 
  .btm-focus:focus{
-    background-color:var(--portf-btm-bg-effct) ;
-    color:var(--portf-btm-tx-effct);
+    background-color:var(--blue-color) ;
+    color:var(--white-color);
  }
 
  .portfolio-title{
@@ -293,7 +288,7 @@ cursor: pointer;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: var(--portf-title);
+color: var(--black-color);
  }
 
  .portfolio-text{
@@ -301,6 +296,6 @@ color: var(--portf-title);
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: var(--portf-text);
+color: var(--gray-color);
 
  }
